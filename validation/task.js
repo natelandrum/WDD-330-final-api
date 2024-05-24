@@ -6,6 +6,7 @@ const saveTask = (req, res, next) => {
         description: "required|string",
         due: "required|string",
         priority: "required|string",
+        completed: "required|boolean"
     };
 
     validator(req.body, validationRule, {}, (err, status) => {

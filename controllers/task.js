@@ -19,6 +19,7 @@ const createTask = async (req, res) => {
     description: req.body.description,
     due: req.body.due,
     priority: req.body.priority,
+    completed: req.body.completed,
   };
 
   const response = await mongodb
@@ -45,6 +46,7 @@ const updateTask = async (req, res) => {
     description: req.body.description,
     due: req.body.due,
     priority: req.body.priority,
+    completed: req.body.completed,
   };
 
   const response = await mongodb
